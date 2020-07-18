@@ -47,4 +47,10 @@ body{
     border-radius: 50%;
     color:white;
     text-decoration:none;
-        }
+}
+
+.bookDiv {
+    border: 2px solid black;
+    width: 90%;
+    color: black;
+}
