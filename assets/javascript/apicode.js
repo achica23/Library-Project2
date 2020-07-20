@@ -1,21 +1,66 @@
+$(document).ready(function(){
+//console.log("help")
 
-function queryURL() {
+  var queryURL = "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=eCBC3foQULpuJ7el53IIVfVOjWDGl7cB";
+  //console.log("it works")
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function random(res){
+    console.log("random word")
+    var results = res.results
+    for (let i = 0; i < res.results.length; i++){
+     let books = $("<div class=\bookDiv\>")
+
+     var author = results[i].author;
+     var publisher = results[i].publisher;
+     var publishDate = results[i].published_date;
+     var genre = results[i].list_name;
+     var description = results[i].description;
+     var title = results[i].title;
+  
+     books.append(author);
+     books.append(publisher);
+     books.append(publishDate);
+     books.append(genre);
+     books.append(description);
+     books.append(title);
+  
+     $(".bookDiv").append(books);
+    
+    }
+    return books
+    console.log(random())
+  });
+  var fun = random()
+
+  $(document).on("click", ".searchbar", function(userEntry) {
+    if (userEntry === fun){
+      let books = $("<div class=\bookDiv\>")
+    }
+  })
+
+  
+
+
+
+// function queryURL() {
  
- var queryURL = "https://api.nytimes.com/svc/books/v3/lists.json?";
+ 
 
- var queryParams = { "api-key": "eCBC3foQULpuJ7el53IIVfVOjWDGl7cB" };
+//  var queryParams = { "api-key": "eCBC3foQULpuJ7el53IIVfVOjWDGl7cB" };
 
 
- queryParams.q = $("#search-term")
-   .val()
-   .trim();
+//  queryParams.q = $("#search-term")
+//    .val()
+//    .trim();
 
- }
+//  }
 
  // Logging the URL so we have access to it for troubleshooting
- console.log("---------------\nURL: " + queryURL + "\n---------------");
- console.log(queryURL + $.param(queryParams));
- return queryURL + $.param(queryParams);
+//  console.log("---------------\nURL: " + queryURL + "\n---------------");
+//  console.log(queryURL + $.param(queryParams));
+//  return queryURL + $.param(queryParams);
 
 
 function updatePage(NYTData) {
@@ -51,3 +96,4 @@ function updatePage(NYTData) {
  }
 }
 
+})
