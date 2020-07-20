@@ -51,6 +51,28 @@ body{
 
 .bookDiv {
     border: 2px solid black;
-    width: 90%;
+    width: 70%;
     color: black;
+    float: right;
+    margin-right: 22%;
+    margin-top: 8px;
+    background: white;
+    line-height: 200%;
+}
+
+.card {
+    float: left;
+    padding: 10px;
+    /* margin: 2px; */
+    margin-left: 110px;
+    border: 2px solid black;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+#text {
+    color: tomato;
+    
 }

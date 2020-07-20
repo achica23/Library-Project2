@@ -11,6 +11,7 @@ $(document).ready(function(){
     var results = res.results
     for (let i = 0; i < res.results.length; i++){
      let books = $("<div class=\bookDiv\>")
+    
 
      var author = results[i].author;
      var publisher = results[i].publisher;
@@ -30,8 +31,9 @@ $(document).ready(function(){
     
     }
     return books
-    console.log(random())
+    // console.log(random())
   });
+  console.log(random())
   var fun = random()
 
   $(document).on("click", ".searchbar", function(userEntry) {
