@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Book Nook</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -25,11 +27,42 @@
 
   <!-- instructions-->
   <p class="text-center mb-4">
-    search for favorite book via author, title, or genre!
+    Search for favorite book via author, title, or genre!
   </p>
 
+  <!-- cards holding saved images of books to be loaded on page  -->
+  <div class="card" style="width: 15rem;">
+    <img src="./images/book1.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-text">The City We Became by N.K. Jemisin</h4>
+      <p><i>Urban Fantasy</i></p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="./images/book2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-text">Deacon King Kong by James McBride</h4>
+      <p><i>Historical Fiction</i></p>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="./images/book3.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-text">Drifts by Kate Zambreno</h4>
+      <p><i>Psychological Fiction</i></p>
+    </div>
+  </div>
+
+  <!-- empty div for api info -->
   <div class="bookDiv">
-    
+    <p id="authortext"></p>
+    <p id="publisInfo"></p>
+    <p id="publisInfo"></p>
+    <p id="text"></p>
+    <p id="text"></p>
+    <p id="title"></p>
   </div>
 
 
@@ -37,6 +70,7 @@
 
 
 
-<script src="./assets/javascript/apicode.js"></script>
+  <script src="./assets/javascript/apicode.js"></script>
 </body>
+
 </html>

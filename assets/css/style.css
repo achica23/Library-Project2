@@ -51,6 +51,55 @@ body{
 
 .bookDiv {
     border: 2px solid black;
-    width: 90%;
+    width: 70%;
     color: black;
+    float: right;
+    margin-right: 22%;
+    margin-top: 8px;
+    background: white;
+    line-height: 200%;
 }
+
+.card {
+    float: left;
+    padding: 10px;
+    /* margin: 2px; */
+    margin-left: 110px;
+    border: 2px solid black;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+#text {
+    color: tomato;
+    
+}
+
+.shopping-cart {
+    width: 750px;
+    height: 423px;
+    margin: 80px auto;
+    background: #40A3C9;
+    box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    position: relative;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+.delete-btn,
+.rent-btn,
+.buy-btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 17px;
+}
+
