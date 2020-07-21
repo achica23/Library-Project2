@@ -19,7 +19,15 @@ $(document).ready(function(){
      var genre = results[i].list_name;
      var description = results[i].description;
      var title = results[i].title;
-  
+    
+    $("<div>").attr("class", "card")//for image
+    $("<div>").attr("class", "card-body")//for text
+    $("<div>").attr("class", "card-text")//description
+    $("<div>").attr("class", "genre")//genre
+    $("<img>").attr()//for image url 
+    $("<h4>").attr()//title of book database
+    $("<p>").attr()//genre of book from database 
+
      books.append(author);
      books.append(publisher);
      books.append(publishDate);
