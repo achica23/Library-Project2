@@ -3,53 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Cart</title>
+    <title> Purchase Page </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
-    <div class="shopping-cart">
-
-        <div class="title">
-            The Book Nook Cart
-        </div>
-
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email Address: </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="yourname@email.com">
+    <div class="area" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <header>
+                <div id="navBar">
+                    <button type="button" class="btn btn-primary">Home</button>
+                    <h1> The Book Nook</h1>
+                    <img src="/assets/images/shopping cart.png" id="cartIcon" alt="" width="75px"> 
+                    <span id="itemsInCart">0</span>
+                </div>
+            </header>
+            
+            <div id="content">
+                <h1 class="booktitle">Book Title</h1> 
+                <img src="/assets/images/book2.jpg" class="bookCover" alt="..." height="550">
+                <h1 id="authour">Authour:</h1>
+                <h1 id="genre">Genre:</h1>
+                <h1 id="datePublished">Date published:</h1>
+                <div class="wordBox">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae mattis ligula. Phasellus accumsan gravida quam nec finibus. Pellentesque dapibus est facilisis est ullamcorper, sed euismod purus porttitor. Quisque varius ante nibh, sit amet rutrum diam tristique ut. Nullam purus nisl, iaculis eu odio et, interdum blandit orci. Aliquam iaculis risus mi, ut finibus ipsum lobortis eu. Maecenas placerat aliquet metus, at auctor felis blandit at. Cras volutpat, eros id pellentesque sagittis, leo urna fermentum leo, non ultrices nisl ipsum at nisi. Pellentesque mi est, cursus et tortor congue, pulvinar lacinia magna. Donec a eros turpis. In urna orci, eleifend id pharetra ac, auctor in enim. Pellentesque tempus dictum odio ut luctus. Vivamus a arcu massa.
+                        Cras id ullamcorper leo, non euismod lacus.
+                        Etiam ac mauris finibus, sagittis purus ut, facilisis diam. Suspendisse vel fringilla libero, ac hendrerit tellus. Curabitur a pharetra sem, vel condimentum justo. Praesent quis sagittis arcu. Fusce tellus orci, mollis non nunc ac, lacinia hendrerit quam. In vitae tristique arcu. Quisque varius at nulla et efficitur. Phasellus blandit mi et purus consectetur, non aliquet nunc tempor.
+                        Vestibulum commodo malesuada urna at vehicula. Nam sit amet dolor hendrerit, lobortis dui nec, imperdiet ipsum. Mauris porttitor tincidunt odio, hendrerit dapibus sem convallis nec. Quisque tincidunt venenatis viverra. Pellentesque scelerisque posuere nunc. In pellentesque dapibus rhoncus. Nunc hendrerit et est sed congue. Duis eget ipsum est. In rutrum lorem et mauris rutrum aliquam. In nec ex neque. Vestibulum tempor volutpat venenatis. Sed ac blandit dolor. Nullam pellentesque quam orci, quis volutpat nisl varius sollicitudin. 
+                    </p>
+                </div>
+                <div id="buttons">
+                    <button type="button" class="btn btn-lg">Purchase</button>
+                    <button type="button" class="btn btn-lg">Rent</button>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Address: </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234 Lemon St.">
-            </div>
-
-            <div class="form-group" id="price">
-                <label for="exampleFormControlSelect2">Select book style and price: </label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option class="btn">1. Hardcover Copy</option>
-                    <option class="btn">2. Paperback Copy</option>
-                </select>
-
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">You will recive and email with a link to a payment portal to finalize your purchase. Thanks for shopping with us!</textarea>
-            </div>
-            <a class="btn btn-primary" href="./index.html" role="button">Submit Order</a>
-        </form>
-
-
-
-
-
-
-
-
-    </div>
-
-
+            <footer>
+        
+            </footer>
+               
+        </ul>
+    </div >
 </body>
-
 </html>
