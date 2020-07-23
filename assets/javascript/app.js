@@ -1,17 +1,25 @@
-$(document).ready(function () {
+var mysql = require("mysql");
 
-    // global variables
-    // input validation
-    // listen for click on search button
-    // api for book reviews
-    // ajax query for api
-    // log response
-    // loop results over array
-    // add attributes to html elements
+var connection = mysql.createConnection({
+  host: "localhost",
 
+  // Your port; if not 3306
+  port: 3306,
 
+  // Your username
+  user: "root",
 
-}
+  // Your password
+  password: "",
+  database: ""
+});
+
+connection.connect(function(err) {
+  if (err) throw err;
+  console.log("connected as id " + connection.threadId);
+  connection.end();
+});
+
 
 
 
