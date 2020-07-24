@@ -172,7 +172,7 @@ body {
 .card {
     float: left;
     padding: 10px;
-    /* margin: 2px; */
+    margin: 2px;
     margin-left: 110px;
     border: 2px solid black;
 }
