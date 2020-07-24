@@ -15,66 +15,38 @@
 </head>
 
 <body>
-  <div class="container h-100">
-    <div id="content" class="d-flex justify-content-center h-100">
-      <div class="searchbar">
-        <!-- Search input field -->
-        <input class="search_input" type="text" name="" placeholder="Search...">
-        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+  <div class="area" >
+    <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <form action="" class="search-bar">
+      <input type="search" name="search" pattern=".*\S.*" required>
+      <button class="search-btn" type="submit">
+        <span>Search</span>
+      </button>
+    </form>
+
+
+     <!-- cards holding saved images of books to be loaded on page  -->
+    <div class="card" style="width: 15rem;">
+      <a href="cart.html"><img src="/assets/images/book1.jpg" class="card-img-top" alt="..."></a>
+      <div class="card-body">
+        <h4 calss="name&authour">The City We Became by N.K. Jemisin</h4>
+        <p class="genre"><i>Urban Fantasy</i></p>
       </div>
     </div>
+
+
   </div>
-
-  <!-- instructions-->
-  <p class="text-center mb-4">
-    Search for favorite book via author, title, or genre!
-  </p>
-
-  <!-- cards holding saved images of books to be loaded on page  -->
-  <div class="card" style="width: 15rem;">
-    <img src="./images/book1.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h4 class="card-text">The City We Became by N.K. Jemisin</h4>
-      <p class="genre"><i>Urban Fantasy</i></p>
-    </div>
-  </div>
-
-  <div class="card" style="width: 15rem;">
-    <img src="./images/book2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h4 class="card-text">Deacon King Kong by James McBride</h4>
-      <p class="genre"><i>Historical Fiction</i></p>
-    </div>
-  </div>
-
-  <div class="card" style="width: 15rem;">
-    <img src="./images/book3.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h4 class="card-text">Drifts by Kate Zambreno</h4>
-      <p class="genre"><i>Psychological Fiction</i></p>
-    </div>
-  </div>
-
-<<<<<<< HEAD
-  <!-- empty div for api info -->
-  <div class="bookDiv">
-    <p id="authortext"></p>
-    <p id="publisInfo"></p>
-    <p id="publisInfo"></p>
-    <p id="text"></p>
-    <p id="text"></p>
-    <p id="title"></p>
-  </div>
-=======
-<!-- empty div for api info -->
-  
->>>>>>> 0af32e10bf492439b6952ea87ec6ef71ce0a881b
-
-
-
-
-
-
   <script src="./assets/javascript/apicode.js"></script>
 </body>
 
