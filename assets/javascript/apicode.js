@@ -1,3 +1,5 @@
+const booksData = require("../../data/booksData");
+
 $(document).ready(function(){
 //console.log("help")
 
@@ -50,31 +52,12 @@ $(document).ready(function(){
     }
   })
 
-  
-//   app.get("/", function(req, res) {
-//     connection.query("SELECT * FROM books_DB", function(err, result) {
-//         if (err) throw err;
-
-//         let html = '<div class="card1" style="width: 15rem;">';
-
-//         html += "<ul>";
-
-//         for (let i = 0; i < result.length; i++) {
-//             html += "<li><p>: " + result[i].id + "</p>";
-//             html += "<p>: " + result[i].cool_points + "</p>";
-//         }
-
-//         html += "</ul>";
-
-//         res.send(html);
-//     });
-// });
 
   $.ajax({
     type: "POST",
-    url: queryURL,
+    url: booksData,
     data: data,
-  
+    
   });
 
 
