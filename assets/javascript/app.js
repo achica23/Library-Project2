@@ -1,4 +1,4 @@
-var mysql = require("mysql");
+var mysql = require("mysql2");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -10,8 +10,8 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "",
-  database: ""
+  password: "Chefkaiden09",
+  database: "books_DB"
 });
 
 connection.connect(function(err) {
@@ -51,4 +51,3 @@ connection.connect(function(err) {
 
 
 
-)
