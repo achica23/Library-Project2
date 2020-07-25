@@ -199,7 +199,7 @@ body, .search-bar {
     margin-top: 75px;
     margin-left: 280px;
     width: 75%;
-    height: 950px;
+    height: 1150px;
 }
 .booktitle{
     text-align: center;
@@ -210,6 +210,8 @@ body, .search-bar {
     padding: 15px;
     margin-left: 20px;
     margin-top: 20px;
+    width: auto;
+    height: 200px;
 }
 .description{
     position: relative;
@@ -243,10 +245,20 @@ body, .search-bar {
     margin-top: 20px;
     float: left;
 }
+
+.btn-lg {
+    border: black 2px;
+    color: rgb(65, 67, 70);
+}
+
+
+
 #buttons{
-    position: relative;
+    /* position: relative; */
     margin-top: 35px;
     left: 850px;
+    float: left;
+   
 }
 .context {
     width: 100%;
