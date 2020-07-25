@@ -10,7 +10,7 @@
             },
             "name": "dataBase3",
             "port": 3306,
-            "previewLimit": 50,
+            "previewLimit": 60,
             "server": "localhost",
             "username": "root"
         }
