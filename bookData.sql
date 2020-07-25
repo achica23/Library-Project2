@@ -15,5 +15,7 @@ CREATE TABLE books (
 
 SELECT * FROM books;
 
-INSERT INTO books(thumbnail, author, title, publish_date, cost)
-VALUES ("https://images-na.ssl-images-amazon.com/images/I/51aTZ37G1rL._SX327_BO1,204,203,200_.jpg", "N.K. Jemisin", "The City We Became", "March 24, 2020", 24.99 )
+INSERT INTO books(author, title, publish_date, cost)
+VALUES ("N.K. Jemisin", "The City We Became", "March 24, 2020", 24.99 );
+
+INSERT INTO books(author, title, publish_date, cost)
