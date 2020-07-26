@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS books_DB;
-CREATE DATABASE books_DB;
+DROP DATABASE IF EXISTS book_info;
+CREATE DATABASE books_info;
 
-USE books_DB;
+USE books_info;
 
-CREATE TABLE books (
+CREATE TABLE books_list (
 	id INT NOT NULL auto_increment,
     thumbnail varchar(255) not null,
     author varchar(255) not null,
@@ -15,5 +15,9 @@ CREATE TABLE books (
 
 SELECT * FROM books;
 
-INSERT INTO books(thumbnail, author, title, publish_date, cost)
-VALUES ("https://images-na.ssl-images-amazon.com/images/I/51aTZ37G1rL._SX327_BO1,204,203,200_.jpg", "N.K. Jemisin", "The City We Became", "March 24, 2020", 24.99 );
+insert into book_list (image_ID, title, author, publish_date)
+values ("", "The Order", "Daniel Silva", "July 14, 2020");
+("", "Peace Talks", "Jim Butcher", "July 14,2020"),
+("", "The Vanishing Half", "Brit Bennett", "June 2, 2020"),
+("", "28 Summers", "Elin Hilderbrand", "June 16, 2020"),
+("", "Where the Crawdads Sing", "Deli Ownes", "August 14, 2018");
