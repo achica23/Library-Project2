@@ -1,0 +1,18 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": true,
+            "connectionTimeout": 60,
+            "database": "books_DB",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "dataBase3",
+            "port": 3306,
+            "previewLimit": 60,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
