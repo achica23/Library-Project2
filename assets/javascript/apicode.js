@@ -1,5 +1,3 @@
-const booksData = require("../../data/booksData");
-
 $(document).ready(function(){
 //console.log("help")
 
@@ -51,14 +49,14 @@ $(document).ready(function(){
       let books = $("<div class=\bookDiv\>")
     }
   })
+  
+  var items = document.getElementById("itemsInCart")
+  
+  function addOne(){
+    console.log("hello")
+  }
 
 
-  $.ajax({
-    type: "POST",
-    url: booksData,
-    data: data,
-    
-  });
 
 
 });

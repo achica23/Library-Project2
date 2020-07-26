@@ -1,7 +1,7 @@
 /** Index Page **/
 *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 	border: 0;
-	box-sizing: border-box;
 	margin: 0;
     padding: 0;
     color: black;
@@ -171,27 +171,27 @@ body, .search-bar {
 
 /** Second Page **/ 
 #navBar{
-    margin-top: 10px;
-    border-radius: 15px;
     background-color: #C8F8FA;
     text-align: center;
     line-height: 75px;
-    margin-left: 280px;
     height: 80px;
-    width: 75%;
+    width: 100%;
+    border-radius: 5px;
+}
+#bookImg{
+    margin-right: 75px;
 }
 #cartIcon{
     position: relative;
     float: right;
-    top: -45px;
-    right: 100px;
+    right: 285px;
+    top: 10px;
 }
 #itemsInCart{
-    font-size: 35px;
+    font-size: 25px;
     position: relative;
     float: right;
-    top: -45px;
-    left: 15px;
+    left: -175px;
 }
 #content{
     border-radius: 15px;
@@ -199,7 +199,7 @@ body, .search-bar {
     margin-top: 75px;
     margin-left: 280px;
     width: 75%;
-    height: 1150px;
+    height: 75%;
 }
 .booktitle{
     text-align: center;
@@ -209,62 +209,29 @@ body, .search-bar {
     float: left;
     padding: 15px;
     margin-left: 20px;
-    margin-top: 20px;
-    width: auto;
-    height: 200px;
+    margin-top: 0px;
 }
 .description{
     position: relative;
-    top: 25px;
+    top: 10px;
     line-height: 30px;
     font-size: 25px;
 }
-#authour{
-    font-size: 45px;
-    position: absolute;
-    margin-left: 45px;
-    bottom: 120px;
-}
-#genre{
-    font-size: 45px;
-    position: absolute;
-    margin-left: 45px;
-    bottom: 80px;
-}
-#datePublished{
-    font-size: 45px;
-    position: absolute;
-    margin-left: 45px;
-    bottom: 40px;
-}
 .btn{
     position: relative;
-    left: 45px;
-    width: 180px;
-    margin-left: 5px;
+    left: 295px;
+    width: 280px;
     margin-top: 20px;
     float: left;
 }
-
-.btn-lg {
-    border: black 2px;
-    color: rgb(65, 67, 70);
-}
-
-
-
 #buttons{
-    /* position: relative; */
-    margin-top: 35px;
-    left: 850px;
-    float: left;
-   
+    position: relative;
+    
 }
 .context {
     width: 100%;
-    position: absolute;
+    position: relative;
     top:50vh;
-    
 }
 .area{
     background: #76AEDE;  
@@ -385,4 +352,27 @@ body, .search-bar {
         border-radius: 50%;
     }
 
+}
+/** Checkout Page**/
+#bookImgCheckout{
+    position: relative;
+    left: -100px;
+}
+#info{
+    margin-top: 15px;
+    text-align: center;
+}
+#checkoutInfo{
+    width: 75%;
+    margin: auto;
+    margin-top: 75px;
+}
+#purchaseBtn{
+    margin-left: 175px;
+    width: 550px;
+}
+#footerDiv{
+    position: relative;
+    bottom: 0;
+    background-color: red;
 }
