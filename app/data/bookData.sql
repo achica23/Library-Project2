@@ -18,4 +18,3 @@ SELECT * FROM books;
 INSERT INTO books(author, title, publish_date, cost)
 VALUES ("N.K. Jemisin", "The City We Became", "March 24, 2020", 24.99 );
 
-INSERT INTO books(author, title, publish_date, cost)

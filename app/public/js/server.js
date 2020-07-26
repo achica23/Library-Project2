@@ -13,7 +13,7 @@ app.use(express.json());
 require("./routes/apiroutes")(app);
 require("./routes/htmlroutes")(app);
 
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App listening on PORT: " + PORT);
 });
 
@@ -26,10 +26,10 @@ let connection = mysql.createConnection({
   database: "books_info"
 });
 
-connection.connect(function (err){
+connection.connect(function (err) {
   if (err) {
-      console.log("error connection: " + err.stack);
-      return;
+    console.log("error connection: " + err.stack);
+    return;
   }
   console.log("connected as id " + connection.threadId);
 
